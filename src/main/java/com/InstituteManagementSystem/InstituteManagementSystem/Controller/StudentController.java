@@ -5,8 +5,6 @@ import com.InstituteManagementSystem.InstituteManagementSystem.Service.StudentSe
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -14,7 +12,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(path = "/api/student")
-public class MainController {
+public class StudentController {
     @Autowired
     private StudentService studentService;
 
