@@ -2,6 +2,8 @@ package com.InstituteManagementSystem.InstituteManagementSystem.Service;
 
 
 import com.InstituteManagementSystem.InstituteManagementSystem.Model.Teacher;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,11 +19,14 @@ public class TeacherService {
     public  List<Teacher> listofTeacher = new CopyOnWriteArrayList<>();
     int currId = 1;
 
+    private static final Logger logger = LoggerFactory.getLogger(TeacherService.class);
+
     /**
      * Retrieve a list of all Teacher.
      * @return a list of all Teacher
      */
     public List<Teacher>getAllTeacher(){
+        logger.info("Getting all Teacher");
         return listofTeacher;
     }
 
@@ -37,6 +42,7 @@ public class TeacherService {
                 }
         ).findFirst();
 
+        logger.info("get Teacher with id: " + id);
         return foundRecode.orElse(null);
 
     }
@@ -49,6 +55,8 @@ public class TeacherService {
     public  Teacher createTeacher(Teacher currTeacher){
         currTeacher.id=this.currId ++;
         listofTeacher.add(currTeacher);
+        logger.info("Created Teacher with id: " + currTeacher.id);
+
         return currTeacher;
     }
 
@@ -63,6 +71,8 @@ public class TeacherService {
         foundTeacher.name = updatedTeacher.name;
         foundTeacher.email= updatedTeacher.email;
         foundTeacher.salary= updatedTeacher.salary;
+
+        logger.info("updated Teacher with id: " + id);
         return foundTeacher;
     }
 
@@ -74,6 +84,8 @@ public class TeacherService {
     public Teacher deleatTeacher(int id){
         Teacher foundTeacher = getTeacher(id);
         listofTeacher.remove(foundTeacher);
+
+        logger.info("delete Teacher with id: " + id);
         return foundTeacher;
     }
 }

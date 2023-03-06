@@ -1,6 +1,8 @@
 package com.InstituteManagementSystem.InstituteManagementSystem.Service;
 
 import com.InstituteManagementSystem.InstituteManagementSystem.Model.Student;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,11 +22,14 @@ public class StudentService {
     public List<Student> listofStudent = new CopyOnWriteArrayList<>();
     int currId = 1;
 
+    private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
+
     /**
      * Retrieve a list of all students.
      * @return a list of all students
      */
     public List<Student>getAllStudent(){
+        logger.info("Getting all student");
         return listofStudent;
     }
 
@@ -40,6 +45,7 @@ public class StudentService {
                 }
         ).findFirst();
 
+        logger.info("get student with id: " + id);
           return foundRecode.orElse(null);
 
     }
@@ -52,6 +58,8 @@ public class StudentService {
     public Student createStudent(Student currStudent){
         currStudent.id=this.currId ++;
         listofStudent.add(currStudent);
+
+        logger.info("Created student with id: " + currStudent.id);
         return currStudent;
     }
 
@@ -65,6 +73,7 @@ public class StudentService {
         Student foundStudent = getStudent(id);
         foundStudent.name = updatedStudent.name;
         foundStudent.email= updatedStudent.email;
+        logger.info("updated student with id: " + id);
         return foundStudent;
     }
 
@@ -76,6 +85,8 @@ public class StudentService {
     public Student deleatStudent(int id){
         Student foundStudent = getStudent(id);
         listofStudent.remove(foundStudent);
+        logger.info("delete student with id: " + id);
+
         return foundStudent;
     }
 }
