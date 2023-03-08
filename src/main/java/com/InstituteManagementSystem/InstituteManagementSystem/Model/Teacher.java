@@ -8,17 +8,17 @@ public class Teacher {
     /**
      * The ID of the Teacher.
      */
-    public int id;
+    public int TeacherId;
 
     /**
      * The name of the Teacher.
      */
-    public String name;
+    public String TeacherName;
 
     /**
      * The email address of the Teacher.
      */
-    public String email;
+    public String TeacherEmail;
 
     /**
      * The salary of the Teacher.

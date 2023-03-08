@@ -38,7 +38,7 @@ public class TeacherService {
     public Teacher getTeacher(int id) {
         Optional<Teacher> foundRecode =  listofTeacher.stream().filter(
                 (currentTeacher) -> {
-                    return currentTeacher.id == id;
+                    return currentTeacher.TeacherId == id;
                 }
         ).findFirst();
 
@@ -53,9 +53,9 @@ public class TeacherService {
      * @return the newly created Teacher
      */
     public  Teacher createTeacher(Teacher currTeacher){
-        currTeacher.id=this.currId ++;
+        currTeacher.TeacherId=this.currId ++;
         listofTeacher.add(currTeacher);
-        logger.info("Created Teacher with id: " + currTeacher.id);
+        logger.info("Created Teacher with id: " + currTeacher.TeacherId);
 
         return currTeacher;
     }
@@ -68,8 +68,8 @@ public class TeacherService {
      */
     public Teacher updateTeacher(int id, Teacher updatedTeacher){
         Teacher foundTeacher = getTeacher(id);
-        foundTeacher.name = updatedTeacher.name;
-        foundTeacher.email= updatedTeacher.email;
+        foundTeacher.TeacherName = updatedTeacher.TeacherName;
+        foundTeacher.TeacherEmail= updatedTeacher.TeacherEmail;
         foundTeacher.salary= updatedTeacher.salary;
 
         logger.info("updated Teacher with id: " + id);

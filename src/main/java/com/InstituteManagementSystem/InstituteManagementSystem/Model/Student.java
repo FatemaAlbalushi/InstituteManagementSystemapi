@@ -8,15 +8,15 @@ public class Student {
     /**
      * The ID of the student.
      */
-    public int id;
+    public int Stusentid;
 
     /**
      * The name of the student.
      */
-    public String name;
+    public String Studentname;
 
     /**
      * The email address of the student.
      */
-    public String email;
+    public String Studentemail;
 }

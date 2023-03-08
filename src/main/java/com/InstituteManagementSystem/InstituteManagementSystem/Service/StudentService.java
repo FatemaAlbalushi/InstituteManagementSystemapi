@@ -41,7 +41,7 @@ public class StudentService {
     public Student getStudent(int id) {
       Optional<Student> foundRecode =  listofStudent.stream().filter(
                 (currentStudent) -> {
-                    return currentStudent.id == id;
+                    return currentStudent.Stusentid == id;
                 }
         ).findFirst();
 
@@ -56,10 +56,10 @@ public class StudentService {
      * @return the newly created student
      */
     public Student createStudent(Student currStudent){
-        currStudent.id=this.currId ++;
+        currStudent.Stusentid=this.currId ++;
         listofStudent.add(currStudent);
 
-        logger.info("Created student with id: " + currStudent.id);
+        logger.info("Created student with id: " + currStudent.Stusentid);
         return currStudent;
     }
 
@@ -71,8 +71,8 @@ public class StudentService {
      */
     public Student updateStudent(int id,Student updatedStudent){
         Student foundStudent = getStudent(id);
-        foundStudent.name = updatedStudent.name;
-        foundStudent.email= updatedStudent.email;
+        foundStudent.Studentname = updatedStudent.Studentname;
+        foundStudent.Studentemail= updatedStudent.Studentemail;
         logger.info("updated student with id: " + id);
         return foundStudent;
     }
