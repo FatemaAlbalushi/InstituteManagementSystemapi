@@ -1,0 +1,100 @@
+2023-03-07 09:42:23.008 INFO  c.I.I.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 12112 (C:\Users\LAP-10\Documents\InstituteManagementSystem\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-07 09:42:23.014 INFO  c.I.I.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-07 09:42:24.382 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-07 09:42:24.396 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-07 09:42:24.397 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-07 09:42:24.398 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-07 09:42:24.532 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-07 09:42:24.532 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1458 ms
+2023-03-07 09:42:25.603 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-07 09:42:25.631 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-07 09:42:25.645 INFO  c.I.I.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 3.016 seconds (process running for 3.7)
+2023-03-07 09:43:12.647 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-07 09:43:12.650 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-07 09:43:12.659 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-03-07 09:43:14.490 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 796 ms
+2023-03-07 09:51:22.408 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-07 09:51:59.085 INFO  c.I.I.Service.StudentService - Created student with id: 1
+2023-03-07 09:52:14.969 INFO  c.I.I.Service.StudentService - Created student with id: 2
+2023-03-07 09:52:22.377 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-07 09:52:30.634 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ":1"]
+2023-03-07 09:52:42.292 INFO  c.I.I.Service.StudentService - get student with id: 1
+2023-03-07 09:54:07.551 INFO  c.I.I.Service.StudentService - get student with id: -1
+2023-03-07 09:54:07.586 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot assign field "name" because "foundStudent" is null] with root cause
+java.lang.NullPointerException: Cannot assign field "name" because "foundStudent" is null
+	at com.InstituteManagementSystem.InstituteManagementSystem.Service.StudentService.updateStudent(StudentService.java:74)
+	at com.InstituteManagementSystem.InstituteManagementSystem.Controller.StudentController.updateStudent(StudentController.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:734)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-07 09:54:16.260 INFO  c.I.I.Service.StudentService - get student with id: 1
+2023-03-07 09:54:16.261 INFO  c.I.I.Service.StudentService - updated student with id: 1
+2023-03-07 09:54:22.150 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-07 10:08:47.442 INFO  c.I.I.Service.StudentService - get student with id: 2
+2023-03-07 10:12:58.087 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-07 10:12:58.173 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-07 10:12:58.547 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 16516 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-07 10:12:58.548 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-07 10:13:00.812 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.485 seconds (process running for 3.532)
+2023-03-07 10:13:22.831 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-07 10:13:22.907 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-07 10:13:23.237 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 16388 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-07 10:13:23.238 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-07 10:13:25.154 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.117 seconds (process running for 2.98)
+2023-03-07 10:22:25.413 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-07 10:22:25.491 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-07 10:22:25.834 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 13372 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-07 10:22:25.835 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-07 10:22:27.732 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.095 seconds (process running for 3.046)
+2023-03-07 10:23:01.148 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-07 10:23:01.225 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-07 10:23:01.553 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 18488 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-07 10:23:01.554 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-07 10:23:03.531 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.177 seconds (process running for 3.098)

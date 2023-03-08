@@ -1,0 +1,79 @@
+2023-03-06 14:03:45.840 INFO  c.I.I.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 14924 (C:\Users\LAP-10\Documents\InstituteManagementSystem\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:03:45.843 INFO  c.I.I.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:03:47.131 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 14:03:47.145 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:03:47.146 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 14:03:47.146 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-06 14:03:47.258 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 14:03:47.259 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+2023-03-06 14:03:48.230 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:03:48.252 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 14:03:48.263 INFO  c.I.I.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 2.835 seconds (process running for 3.403)
+2023-03-06 14:09:33.383 INFO  c.I.I.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 7080 (C:\Users\LAP-10\Documents\InstituteManagementSystem\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:09:33.386 INFO  c.I.I.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:09:34.507 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 14:09:34.517 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:09:34.519 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 14:09:34.519 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-06 14:09:34.637 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 14:09:34.637 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1201 ms
+2023-03-06 14:09:35.554 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:09:35.606 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 14:09:35.616 INFO  c.I.I.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 2.533 seconds (process running for 3.057)
+2023-03-06 14:11:19.253 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-06 14:11:19.254 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-06 14:11:19.259 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-03-06 14:11:19.317 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-06 14:14:38.563 INFO  c.I.I.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 8272 (C:\Users\LAP-10\Documents\InstituteManagementSystem\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:14:38.565 INFO  c.I.I.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:14:39.844 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 14:14:39.854 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:14:39.855 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 14:14:39.855 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-06 14:14:39.962 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 14:14:39.963 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1349 ms
+2023-03-06 14:14:40.946 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:14:40.966 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 14:14:40.979 INFO  c.I.I.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 2.717 seconds (process running for 3.225)
+2023-03-06 14:14:52.950 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-06 14:14:52.951 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-06 14:14:52.952 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-06 14:14:53.013 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-06 14:15:20.224 INFO  c.I.I.Service.StudentService - Created student with id: 1
+2023-03-06 14:15:35.164 INFO  c.I.I.Service.StudentService - Created student with id: 2
+2023-03-06 14:16:43.196 INFO  c.I.I.Service.StudentService - Created student with id: 3
+2023-03-06 14:16:51.012 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-06 14:16:55.695 INFO  c.I.I.Service.StudentService - get student with id: 2
+2023-03-06 14:17:18.681 INFO  c.I.I.Service.StudentService - get student with id: 3
+2023-03-06 14:17:32.330 INFO  c.I.I.Service.StudentService - get student with id: 3
+2023-03-06 14:17:32.331 INFO  c.I.I.Service.StudentService - updated student with id: 3
+2023-03-06 14:17:40.142 INFO  c.I.I.Service.StudentService - get student with id: 3
+2023-03-06 14:17:47.468 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-06 14:18:04.989 INFO  c.I.I.Service.StudentService - get student with id: 3
+2023-03-06 14:18:04.991 INFO  c.I.I.Service.StudentService - delete student with id: 3
+2023-03-06 14:18:12.566 INFO  c.I.I.Service.StudentService - Getting all student
+2023-03-06 14:19:46.027 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-06 14:19:46.111 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-06 14:19:46.450 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 8292 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:19:46.451 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:19:48.386 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.148 seconds (process running for 3.184)
+2023-03-06 14:23:33.901 INFO  c.I.I.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 17736 (C:\Users\LAP-10\Documents\InstituteManagementSystem\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:23:33.903 INFO  c.I.I.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:23:35.191 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 14:23:35.208 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:23:35.211 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 14:23:35.211 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-06 14:23:35.365 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 14:23:35.366 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1415 ms
+2023-03-06 14:23:36.966 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-06 14:23:37.002 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 14:23:37.026 INFO  c.I.I.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 3.444 seconds (process running for 4.017)
+2023-03-06 14:23:40.757 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests]: InstituteManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-06 14:23:40.841 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplication for test class com.InstituteManagementSystem.InstituteManagementSystem.InstituteManagementSystemApplicationTests
+2023-03-06 14:23:41.259 INFO  c.I.I.InstituteManagementSystemApplicationTests - Starting InstituteManagementSystemApplicationTests using Java 17.0.2 with PID 7628 (started by LAP-10 in C:\Users\LAP-10\Documents\InstituteManagementSystem)
+2023-03-06 14:23:41.261 INFO  c.I.I.InstituteManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-03-06 14:23:43.218 INFO  c.I.I.InstituteManagementSystemApplicationTests - Started InstituteManagementSystemApplicationTests in 2.189 seconds (process running for 3.356)
+2023-03-06 14:25:07.337 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-06 14:25:07.339 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-06 14:25:07.340 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-06 14:25:07.989 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 427 ms
